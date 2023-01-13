@@ -43,107 +43,68 @@ ERP Car Management by flutter❤️
 lib
 │
 │──── core
-│     │─── app_prefs
-│     │    └── app_prefs.dart
-│     │─── assets
-│     │    └── images
-│     │         └── app_images.dart
-│     │─── constant
-│     │     │── failure_messages.dart
-│     │     │── strings.dart
-│     │     └── success_messages.dart
-│     │─── enum
-│     │     │── product_type_enum.dart
-│     │     └── text_form_typ_enum.dart
-│     │─── error
-│     │     │── exceptions.dart
-│     │     └── failures.dart
-│     │─── language
-│     │     └── language_manager.dart
-│     │─── models
-│     │     │── auth_model.dart
-│     │     │── favorite_model.dart
-│     │     │── product_model.dart  
-│     │     └── user_data.dart
-│     │─── navigator
-│     │     └── navigator.dart
-│     │─── network
-│     │     │── apis.dart
-│     │     │── dio_helper.dart
-│     │     │── end_points.dart
-│     │     └── network_info.dart
-│     │─── routes
-│     │     │── router.dart
-│     │     └── routes.dart
-│     │─── theme
-│     │     │── bloc
-│     │     │   └── cubit
-│     │     │       │── theme_cubit.dart
-│     │     │       └── theme_state.dart
-│     │     │── colors.dart
-│     │     └── themes.dart
-│     └─── validators
-│           │── validate_messages.dart
-│           └── validators.dart
-│
+│     │─── database
+│     │    └── daos
+│     │    │   │── brand_dao.dart
+│     │    │   │── car_dao.dart
+│     │    │   |── contract_dao.dart
+│     │    │   │── customer_dao.dart
+│     │    │   │── importer_dao.dart
+│     │    │   |── expenses_dao.dart
+│     │    │   │── model_dao.dart
+│     │    │   │── owner_dao.dart
+│     │    │   │── user_dao.dart
+│     │    │   └── contract_dao.dart
+│     │    └── tables
+│     │    │   │── brand_table.dart
+│     │    │   │── car_table.dart
+│     │    │   |── contract_table.dart
+│     │    │   │── customer_table.dart
+│     │    │   │── importer_table.dart
+│     │    │   |── expenses_table.dart
+│     │    │   │── model_table.dart
+│     │    │   │── owner_table.dart
+│     │    │   │── user_table.dart
+│     │    │   └── contract_table.dart
+│     │    └── drift_database.dart
+│     │─── utils
+│     │     │── media_query_values.dart
+│     │     └── strings_manager.dart
+│     │─── validator
+│     │     └── validator.dart
+│     │─── widgets
+│     │     │── infobar.dart
+│     │     │── show_dialog.dart
+│     │     └── text_field.dart
+|     │
 │──── features
-│     │─── cart
-│     │     │── data
-│     │     │   │─── datasources
-│     │     │   │   └── cart_remote_datasources.dart
-│     │     │   │─── model
-│     │     │   │   │── add_cart_model.dart
-│     │     │   │   │── cart_model.dart
-│     │     │   │   └── update_cart.dart
-│     │     │   └─── repositories
-│     │     │       └── cart_repo_impl.dart
-│     │     │── domain
-│     │     │   │─── repositories
-│     │     │   │   └── cart_repo.dart
-│     │     │   │─── usecases
-│     │     │   │   └── cart_usecase.dart
-│     │     └── presentation
-│     │         │─── bloc
-│     │         │   └── cubit
-│     │         │       │── cart_cubit.dart
-│     │         │       └── cart_state.dart
-│     │         │─── pages
-│     │         │   └── cart_page.dart
-│     │         └─── widgets
-│     │             └── cart_item.dart
-│     │
-│     │─── categories ...
-│     │─── check_out ...
-│     │─── favorite ...
-│     │─── filter ...
+│     │─── report
+│     │     │── cubit
+│     │     │   │── report_cubit.dart
+│     │     │   └── report_state.dart
+│     │     │── units
+│     │     │   │─── report_table.dart
+│     │     │   │─── report_bottom.dart
+│     │     │   └── report_header.dart
+│     │     └── main_report_view.dart
+│     │─── auth ...
+│     │─── car ...
+│     │─── code_car ...
+│     │─── contract ...
 │     │─── home ...
 │     │─── login ...
-│     │─── orders ...
+│     │─── splash ...
 │     │─── payment_methods ...
 │     │─── product ...
 │     │─── profile ...
 │     │─── shipping_addresses ...
 │     │─── sign_up ...
 │     └─── splash ...
-│
-│──── widgets
-│     │─── animated_button_widget.dart
-│     │─── button_widget.dart
-│     │─── cached_network_image_widget.dart
-│     │─── circle_button.dart
-│     │─── favorite_button_widget.dart
-│     │─── flutter_toast_widget.dart
-│     │─── list_tile_item_widget.dart
-│     │─── loader_widget.dart
-│     │─── offline_widget.dart
-│     │─── product_item.dart
-│     │─── products_grid_view.dart
-│     │─── products_list_view.dart
-│     │─── rating_bar_builder.dart
-│     │─── rating_bar_count_widget.dart
-│     │─── rating_bar_count_widget.dart
-│     └─── text_form_field_widget.dart
-│
+│     │ 
+│──── config
+│     └─── magic_router.dart
+│──── app.dart.dart
+│──── bloc_observer.dart
 │──── injection_container.dart
 └──── main.dart    
 ```
@@ -151,12 +112,5 @@ lib
 
 ## Packages
 
-![image](https://user-images.githubusercontent.com/60518534/210802806-582352c1-5f94-4a35-bc09-57aba5c7cea1.png)
-## Feedback
+![carbon (1)](https://user-images.githubusercontent.com/59745489/212337665-a07845e0-fd26-430f-aefa-c02d7cd4c33d.png)
 
-If you have any feedback, please reach out to us at mahmoud3laa2210@gmail.com
-
-## 🔗 You can follow me on
-
-[![portfolio](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MahmoudAlaa22)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahmoudalaa2210/)
